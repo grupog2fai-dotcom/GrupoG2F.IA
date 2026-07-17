@@ -88,7 +88,7 @@ export default function About() {
               {[
                 { num: "47+", label: "Empresas aceleradas" },
                 { num: "7 dias", label: "Tempo médio p/ 1º resultado" },
-                { num: "3 países", label: "Brasil, EUA e Portugal" },
+                { num: "BR, PY & LATAM", label: "Brasil, Paraguai e América Latina" },
                 { num: "R$35k+", label: "Economizados em salários/cliente" },
               ].map((stat, i) => (
                 <div key={i} className="p-5 bg-[#111111] border border-[#1f1f1f] rounded-sm">

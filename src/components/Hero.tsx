@@ -162,7 +162,7 @@ export default function Hero() {
             <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
             <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
             <div className="flex gap-10 logos-track">
-              {["OpenAI", "Google Ads", "Meta Ads", "Supabase", "WhatsApp API", "Next.js", "Make", "Stripe", "OpenAI", "Google Ads", "Meta Ads", "Supabase", "WhatsApp API", "Next.js", "Make", "Stripe"].map((t, i) => (
+              {["OpenAI", "Google Ads", "Meta Ads", "Supabase", "WhatsApp API", "Next.js", "Make", "Cakto", "OpenAI", "Google Ads", "Meta Ads", "Supabase", "WhatsApp API", "Next.js", "Make", "Cakto"].map((t, i) => (
                 <span key={i} className="whitespace-nowrap text-zinc-500 text-sm font-medium"
                   style={{ fontFamily: 'var(--font-satoshi)' }}>
                   {t}

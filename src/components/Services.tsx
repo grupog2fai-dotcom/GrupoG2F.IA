@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const services = [
   {
@@ -15,10 +16,11 @@ const services = [
       "Posição Top 3 garantida em 7 dias",
     ],
     guarantee: "Top 3 em 7 dias ou devolvemos",
-    cta: "Contratar por R$ 297/mês",
-    cta2: "Quero saber mais",
+    cta: "Contratar",
+    cta2: "Saber mais",
     highlight: false,
-    href: "#diagnostico",
+    href: "https://wa.me/5511999999999",
+    href2: "/seo-local",
   },
   {
     tag: "Agente de IA",
@@ -32,10 +34,11 @@ const services = [
       "Humanizado — treinado com a linguagem do seu negócio",
     ],
     guarantee: "50 conversas automatizadas em 15 dias",
-    cta: "Contratar por R$ 997",
-    cta2: "Ver demonstração",
+    cta: "Contratar",
+    cta2: "Saber mais",
     highlight: true,
-    href: "#diagnostico",
+    href: "https://wa.me/5511999999999",
+    href2: "/agente-ia",
   },
   {
     tag: "Landing Page + Tráfego",
@@ -49,10 +52,11 @@ const services = [
       "20 leads qualificados em 15 dias — garantido",
     ],
     guarantee: "20 leads em 15 dias ou reembolso",
-    cta: "Contratar por R$ 1.497",
-    cta2: "Quero saber mais",
+    cta: "Contratar",
+    cta2: "Saber mais",
     highlight: false,
-    href: "#diagnostico",
+    href: "https://wa.me/5511999999999",
+    href2: "/landing-page-trafego",
   },
 ];
 
@@ -179,15 +183,13 @@ export default function Services() {
                 >
                   {service.cta}
                 </a>
-                <a
-                  href="https://wa.me/5511999999999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full text-center py-3 px-6 text-sm text-zinc-500 hover:text-zinc-300 transition-colors border border-transparent hover:border-zinc-800 rounded-sm"
+                <Link
+                  href={service.href2}
+                  className="w-full text-center py-3 px-6 text-sm text-zinc-400 hover:text-white transition-colors border border-transparent hover:border-zinc-800 rounded-sm"
                   style={{ fontFamily: 'var(--font-satoshi)' }}
                 >
                   {service.cta2}
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
@@ -196,7 +198,7 @@ export default function Services() {
         {/* Parcelamento note */}
         <p className="text-center text-zinc-600 text-sm mt-8"
           style={{ fontFamily: 'var(--font-satoshi)' }}>
-          Pagamento à vista ou parcelado em até 3x no cartão. Processado com segurança via Stripe.
+          Pagamento à vista ou parcelado em até 3x no cartão. Processado com segurança via Cakto.
         </p>
       </div>
     </section>
