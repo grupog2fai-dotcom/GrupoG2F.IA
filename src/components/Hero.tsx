@@ -46,17 +46,15 @@ export default function Hero() {
             {/* Tag */}
             <motion.div variants={item} className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
-              <span className="text-xs font-semibold text-zinc-400 tracking-widest uppercase"
-                style={{ fontFamily: 'var(--font-satoshi)' }}>
+              <span className="text-xs font-semibold text-zinc-400 tracking-widest uppercase font-satoshi">
                 Tecnologia de ponta. Resultado em dias.
               </span>
             </motion.div>
 
-            {/* H1 — Fluxora-style mixed typography */}
+            {/* H1 — mixed typography */}
             <motion.h1
               variants={item}
-              className="text-[clamp(3rem,7vw,5.5rem)] leading-[0.93] font-semibold text-white"
-              style={{ fontFamily: 'var(--font-clash)' }}
+              className="text-[clamp(3rem,7vw,5.5rem)] leading-[0.93] font-semibold text-white font-clash"
             >
               Seus clientes buscam<br />
               por você.{" "}
@@ -73,8 +71,7 @@ export default function Hero() {
             {/* Sub */}
             <motion.p
               variants={item}
-              className="text-lg md:text-xl text-zinc-400 leading-relaxed max-w-lg"
-              style={{ fontFamily: 'var(--font-satoshi)', fontWeight: 400 }}
+              className="text-lg md:text-xl text-zinc-400 leading-relaxed max-w-lg font-satoshi"
             >
               A G2F instala o sistema completo para sua empresa{" "}
               <strong className="text-white font-medium">aparecer primeiro</strong>,{" "}
@@ -86,8 +83,7 @@ export default function Hero() {
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mt-2">
               <a
                 href="#servicos"
-                className="group flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold px-8 py-4 transition-all duration-300 rounded-sm text-sm uppercase tracking-widest"
-                style={{ fontFamily: 'var(--font-clash)' }}
+                className="group flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold px-8 py-4 transition-all duration-300 rounded-sm text-sm uppercase tracking-widest font-clash"
               >
                 <span>Escolher meu serviço</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transition-transform group-hover:translate-x-1">
@@ -98,25 +94,24 @@ export default function Hero() {
                 href="https://wa.me/5511999999999"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 border border-zinc-800 hover:border-zinc-600 text-zinc-300 hover:text-white font-semibold px-8 py-4 transition-all duration-300 rounded-sm text-sm"
-                style={{ fontFamily: 'var(--font-satoshi)' }}
+                className="flex items-center justify-center gap-3 border border-zinc-800 hover:border-zinc-600 text-zinc-300 hover:text-white font-semibold px-8 py-4 transition-all duration-300 rounded-sm text-sm font-satoshi"
               >
                 Falar com especialista
               </a>
             </motion.div>
 
-            {/* Floating Stats — Fluxora-style cards */}
+            {/* Floating Stats */}
             <motion.div variants={item} className="flex gap-4 mt-4">
               <div className="flex flex-col gap-1 bg-[#111111] border border-[#1f1f1f] px-5 py-4 rounded-sm">
-                <span className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-clash)' }}>47+</span>
+                <span className="text-2xl font-bold text-white font-clash">47+</span>
                 <span className="text-xs text-zinc-500 uppercase tracking-widest">Clientes ativos</span>
               </div>
               <div className="flex flex-col gap-1 bg-[#111111] border border-[#1f1f1f] px-5 py-4 rounded-sm">
-                <span className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-clash)' }}>97%</span>
+                <span className="text-2xl font-bold text-white font-clash">97%</span>
                 <span className="text-xs text-zinc-500 uppercase tracking-widest">Satisfação</span>
               </div>
               <div className="flex flex-col gap-1 bg-[#f84f1d]/10 border border-[#f84f1d]/30 px-5 py-4 rounded-sm">
-                <span className="text-2xl font-bold text-[#f84f1d]" style={{ fontFamily: 'var(--font-clash)' }}>7d</span>
+                <span className="text-2xl font-bold text-[#f84f1d] font-clash">7d</span>
                 <span className="text-xs text-zinc-500 uppercase tracking-widest">1º resultado</span>
               </div>
             </motion.div>
@@ -136,6 +131,7 @@ export default function Hero() {
                 fill
                 className="object-cover object-top"
                 priority
+                sizes="(max-width: 1024px) 0vw, 58vw"
                 style={{ maskImage: 'linear-gradient(to left, transparent 0%, black 30%)' }}
               />
               {/* Orange glow at bottom of image */}
@@ -154,17 +150,18 @@ export default function Hero() {
       {/* Partners bar */}
       <div className="relative z-10 border-t border-[#1f1f1f] bg-[#0a0a0a] py-5 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex items-center gap-6">
-          <span className="text-zinc-600 text-xs uppercase tracking-widest whitespace-nowrap"
-            style={{ fontFamily: 'var(--font-satoshi)' }}>
+          <span className="text-zinc-600 text-xs uppercase tracking-widest whitespace-nowrap font-satoshi">
             Nossas Ferramentas
           </span>
           <div className="overflow-hidden flex-1 relative">
             <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
             <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
-            <div className="flex gap-10 logos-track">
+            <div 
+              className="flex gap-10 logos-track"
+              style={{ animation: 'scroll-logos 30s linear infinite' }}
+            >
               {["OpenAI", "Google Ads", "Meta Ads", "Supabase", "WhatsApp API", "Next.js", "Make", "Cakto", "OpenAI", "Google Ads", "Meta Ads", "Supabase", "WhatsApp API", "Next.js", "Make", "Cakto"].map((t, i) => (
-                <span key={i} className="whitespace-nowrap text-zinc-500 text-sm font-medium"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                <span key={i} className="whitespace-nowrap text-zinc-500 text-sm font-medium font-satoshi">
                   {t}
                 </span>
               ))}

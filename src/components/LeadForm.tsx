@@ -19,22 +19,19 @@ export default function LeadForm() {
           >
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
-              <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase"
-                style={{ fontFamily: 'var(--font-satoshi)' }}>
+              <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
                 Iniciar aceleração
               </span>
             </div>
 
-            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white leading-[1.05]"
-              style={{ fontFamily: 'var(--font-clash)' }}>
+            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white leading-[1.05] font-clash">
               A escolha é sua.{" "}
               <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#f84f1d' }}>
                 O tempo, não.
               </span>
             </h2>
 
-            <p className="text-xl text-zinc-400 leading-relaxed"
-              style={{ fontFamily: 'var(--font-satoshi)' }}>
+            <p className="text-xl text-zinc-400 leading-relaxed font-satoshi">
               Enquanto você lê isso, seu concorrente está aparecendo no Google para o cliente que deveria ser seu.
             </p>
 
@@ -50,7 +47,7 @@ export default function LeadForm() {
                       <path d="M2 5l2.5 2.5L8 3" stroke="#f84f1d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <span className="text-zinc-400 text-sm" style={{ fontFamily: 'var(--font-satoshi)' }}>{item}</span>
+                  <span className="text-zinc-400 text-sm font-satoshi">{item}</span>
                 </div>
               ))}
             </div>
@@ -66,39 +63,33 @@ export default function LeadForm() {
             <form className="flex flex-col gap-6 bg-[#111111] border border-[#1f1f1f] p-8 md:p-10 rounded-sm">
               
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest font-satoshi">
                   Seu nome
                 </label>
                 <input
                   type="text"
                   placeholder="Nome completo"
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors font-satoshi"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest font-satoshi">
                   WhatsApp
                 </label>
                 <input
                   type="tel"
                   placeholder="(00) 00000-0000"
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors font-satoshi"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest font-satoshi">
                   Serviço de interesse
                 </label>
                 <select
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-zinc-300 text-base focus:outline-none focus:border-[#f84f1d] transition-colors appearance-none cursor-pointer"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-zinc-300 text-base focus:outline-none focus:border-[#f84f1d] transition-colors appearance-none cursor-pointer font-satoshi"
                 >
                   <option value="" className="bg-zinc-900">Selecione um serviço</option>
                   <option value="seo" className="bg-zinc-900">SEO Local — R$ 297/mês</option>
@@ -109,22 +100,19 @@ export default function LeadForm() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                <label className="text-xs font-semibold text-zinc-500 uppercase tracking-widest font-satoshi">
                   Qual o maior problema hoje?
                 </label>
                 <textarea
                   rows={3}
                   placeholder="Descreva brevemente..."
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors resize-none"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors resize-none font-satoshi"
                 />
               </div>
 
               <button
                 type="button"
-                className="w-full flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold py-4.5 px-8 rounded-sm transition-all duration-300 text-sm uppercase tracking-widest mt-2"
-                style={{ fontFamily: 'var(--font-clash)', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}
+                className="w-full flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold py-[1.125rem] px-8 rounded-sm transition-all duration-300 text-sm uppercase tracking-widest mt-2 font-clash"
               >
                 Solicitar diagnóstico estratégico
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -132,8 +120,7 @@ export default function LeadForm() {
                 </svg>
               </button>
 
-              <p className="text-center text-zinc-600 text-xs"
-                style={{ fontFamily: 'var(--font-satoshi)' }}>
+              <p className="text-center text-zinc-600 text-xs font-satoshi">
                 Resposta em até 15 minutos. Sem SPAM, sem compromisso.
               </p>
             </form>

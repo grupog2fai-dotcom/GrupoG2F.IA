@@ -22,9 +22,9 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center gap-2">
         <div className="w-7 h-7 bg-[#f84f1d] rounded-sm flex items-center justify-center">
-          <span className="text-white font-bold text-xs" style={{ fontFamily: 'var(--font-clash)' }}>G2F</span>
+          <span className="text-white font-bold text-xs font-clash">G2F</span>
         </div>
-        <span className="text-white font-semibold text-sm tracking-tight" style={{ fontFamily: 'var(--font-clash)' }}>
+        <span className="text-white font-semibold text-sm tracking-tight font-clash">
           GrupoG2F<span className="text-[#f84f1d]">.IA</span>
         </span>
       </div>
@@ -35,8 +35,7 @@ export default function Navbar() {
           <a
             key={link.href}
             href={link.href}
-            className="text-sm text-zinc-400 hover:text-white transition-colors"
-            style={{ fontFamily: 'var(--font-satoshi)' }}
+            className="text-sm text-zinc-400 hover:text-white transition-colors font-satoshi"
           >
             {link.label}
           </a>
@@ -46,8 +45,7 @@ export default function Navbar() {
       {/* CTA */}
       <a
         href="#servicos"
-        className="flex items-center gap-2 bg-[#f84f1d] hover:bg-[#c93c0f] text-white text-sm font-semibold px-5 py-2.5 transition-colors rounded-sm"
-        style={{ fontFamily: 'var(--font-clash)' }}
+        className="flex items-center gap-2 bg-[#f84f1d] hover:bg-[#c93c0f] text-white text-sm font-semibold px-5 py-2.5 transition-colors rounded-sm font-clash"
       >
         Contratar agora
       </a>

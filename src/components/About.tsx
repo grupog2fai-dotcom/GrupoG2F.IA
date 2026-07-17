@@ -16,16 +16,15 @@ export default function About() {
           className="flex items-center gap-2 mb-16"
         >
           <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
-          <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase"
-            style={{ fontFamily: 'var(--font-satoshi)' }}>
+          <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
             Por que escolher a G2F
           </span>
         </motion.div>
 
-        {/* 2-column layout — Fluxora style */}
+        {/* 2-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 items-start">
           
-          {/* Left: Big heading + info */}
+          {/* Left: Big heading + image */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -33,8 +32,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             className="lg:col-span-5"
           >
-            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white leading-[1.05] mb-8"
-              style={{ fontFamily: 'var(--font-clash)' }}>
+            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white leading-[1.05] mb-8 font-clash">
               Não somos uma agência.{" "}
               <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#71717a' }}>
                 Somos a operação
@@ -49,6 +47,7 @@ export default function About() {
                 alt="Gabriel Alexandre — Fundador GrupoG2F.IA"
                 fill
                 className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 42vw"
                 style={{ filter: 'sepia(0.2) saturate(0.9)' }}
               />
               {/* Orange gradient overlay */}
@@ -56,7 +55,7 @@ export default function About() {
                 style={{ background: 'linear-gradient(to top, rgba(10,10,10,0.8) 0%, transparent 50%)' }}
               />
               <div className="absolute bottom-4 left-4">
-                <p className="text-white font-bold text-sm" style={{ fontFamily: 'var(--font-clash)' }}>
+                <p className="text-white font-bold text-sm font-clash">
                   Gabriel Alexandre
                 </p>
                 <p className="text-zinc-400 text-xs">Fundador, GrupoG2F.IA</p>
@@ -72,18 +71,16 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             className="lg:col-span-7 lg:pl-20 flex flex-col gap-10 pt-4"
           >
-            <p className="text-xl text-zinc-300 leading-relaxed"
-              style={{ fontFamily: 'var(--font-satoshi)' }}>
+            <p className="text-xl text-zinc-300 leading-relaxed font-satoshi">
               A G2F nasceu da observação de que a maioria das PMEs não fracassa por falta de esforço, mas por operar{" "}
               <strong className="text-white">sem processos, sem estratégia e sem tecnologia.</strong>
             </p>
 
-            <p className="text-lg text-zinc-400 leading-relaxed"
-              style={{ fontFamily: 'var(--font-satoshi)' }}>
+            <p className="text-lg text-zinc-400 leading-relaxed font-satoshi">
               Enquanto grandes empresas crescem usando IA e automação, milhares de empresários continuam presos a rotinas manuais e ferramentas desconectadas. Nós democratizamos esse acesso.
             </p>
 
-            {/* Stats Grid — Fluxora style */}
+            {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-4 mt-4">
               {[
                 { num: "47+", label: "Empresas aceleradas" },
@@ -92,11 +89,10 @@ export default function About() {
                 { num: "R$35k+", label: "Economizados em salários/cliente" },
               ].map((stat, i) => (
                 <div key={i} className="p-5 bg-[#111111] border border-[#1f1f1f] rounded-sm">
-                  <span className="block text-3xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-clash)' }}>
+                  <span className="block text-3xl font-bold text-white mb-1 font-clash">
                     {stat.num}
                   </span>
-                  <span className="text-xs text-zinc-500 uppercase tracking-wider"
-                    style={{ fontFamily: 'var(--font-satoshi)' }}>
+                  <span className="text-xs text-zinc-500 uppercase tracking-wider font-satoshi">
                     {stat.label}
                   </span>
                 </div>
@@ -106,8 +102,7 @@ export default function About() {
             {/* Button — secondary style */}
             <a
               href="#diagnostico"
-              className="self-start flex items-center gap-3 border border-zinc-700 hover:border-[#f84f1d] text-zinc-300 hover:text-white font-semibold px-7 py-4 transition-all duration-300 rounded-sm text-sm"
-              style={{ fontFamily: 'var(--font-satoshi)' }}
+              className="self-start flex items-center gap-3 border border-zinc-700 hover:border-[#f84f1d] text-zinc-300 hover:text-white font-semibold px-7 py-4 transition-all duration-300 rounded-sm text-sm font-satoshi"
             >
               Agendar diagnóstico gratuito
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

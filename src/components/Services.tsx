@@ -75,28 +75,25 @@ export default function Services() {
         >
           <div className="flex items-center gap-2 mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
-            <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase"
-              style={{ fontFamily: 'var(--font-satoshi)' }}>
+            <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
               Soluções
             </span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-white leading-[1.05]"
-              style={{ fontFamily: 'var(--font-clash)' }}>
+            <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-white leading-[1.05] font-clash">
               Três problemas reais.<br />
               <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#71717a' }}>
                 Três soluções cirúrgicas.
               </span>
             </h2>
-            <p className="text-zinc-400 max-w-sm leading-relaxed text-base"
-              style={{ fontFamily: 'var(--font-satoshi)' }}>
+            <p className="text-zinc-400 max-w-sm leading-relaxed text-base font-satoshi">
               Cada serviço foi criado para um problema específico. Escolha o que mais se encaixa na sua realidade atual.
             </p>
           </div>
         </motion.div>
 
-        {/* Service Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Service Cards Grid — 1 col mobile, 2 col tablet, 3 col desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <motion.div
               key={i}
@@ -112,8 +109,7 @@ export default function Services() {
             >
               {service.highlight && (
                 <div className="absolute -top-3 left-8">
-                  <span className="bg-[#f84f1d] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-sm"
-                    style={{ fontFamily: 'var(--font-clash)' }}>
+                  <span className="bg-[#f84f1d] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-sm font-clash">
                     Mais Procurado
                   </span>
                 </div>
@@ -121,12 +117,11 @@ export default function Services() {
 
               {/* Tag */}
               <div className="flex items-center gap-2 mb-8">
-                <span className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-sm ${
+                <span className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-sm font-satoshi ${
                   service.highlight 
                     ? "bg-[#f84f1d]/15 text-[#f84f1d]" 
                     : "bg-zinc-900 text-zinc-400"
-                }`}
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                }`}>
                   {service.tag}
                 </span>
               </div>
@@ -134,26 +129,23 @@ export default function Services() {
               {/* Price */}
               <div className="mb-6">
                 <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-clash)' }}>
+                  <span className="text-4xl font-bold text-white font-clash">
                     {service.price}
                   </span>
                   <span className="text-zinc-500 text-sm">{service.period}</span>
                 </div>
-                <p className="text-[#f84f1d] text-xs mt-2 font-medium"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}>
+                <p className="text-[#f84f1d] text-xs mt-2 font-medium font-satoshi">
                   ✓ {service.guarantee}
                 </p>
               </div>
 
               {/* Headline */}
-              <h3 className="text-xl font-semibold text-white leading-[1.2] mb-4"
-                style={{ fontFamily: 'var(--font-clash)' }}>
+              <h3 className="text-xl font-semibold text-white leading-[1.2] mb-4 font-clash">
                 {service.headline}
               </h3>
 
               {/* Description */}
-              <p className="text-zinc-400 text-sm leading-relaxed mb-8"
-                style={{ fontFamily: 'var(--font-satoshi)' }}>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-8 font-satoshi">
                 {service.description}
               </p>
 
@@ -162,8 +154,7 @@ export default function Services() {
                 {service.bullets.map((bullet, j) => (
                   <div key={j} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d] mt-1.5 flex-shrink-0" />
-                    <span className="text-sm text-zinc-300"
-                      style={{ fontFamily: 'var(--font-satoshi)' }}>
+                    <span className="text-sm text-zinc-300 font-satoshi">
                       {bullet}
                     </span>
                   </div>
@@ -174,19 +165,19 @@ export default function Services() {
               <div className="flex flex-col gap-3 mt-auto">
                 <a
                   href={service.href}
-                  className={`w-full text-center font-bold py-4 px-6 text-sm rounded-sm transition-all duration-300 uppercase tracking-widest ${
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full text-center font-bold py-4 px-6 text-sm rounded-sm transition-all duration-300 uppercase tracking-widest font-clash ${
                     service.highlight
                       ? "bg-[#f84f1d] hover:bg-[#c93c0f] text-white"
                       : "bg-white hover:bg-zinc-200 text-zinc-950"
                   }`}
-                  style={{ fontFamily: 'var(--font-clash)' }}
                 >
                   {service.cta}
                 </a>
                 <Link
                   href={service.href2}
-                  className="w-full text-center py-3 px-6 text-sm text-zinc-400 hover:text-white transition-colors border border-transparent hover:border-zinc-800 rounded-sm"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  className="w-full text-center py-3 px-6 text-sm text-zinc-400 hover:text-white transition-colors border border-transparent hover:border-zinc-800 rounded-sm font-satoshi"
                 >
                   {service.cta2}
                 </Link>
@@ -196,8 +187,7 @@ export default function Services() {
         </div>
 
         {/* Parcelamento note */}
-        <p className="text-center text-zinc-600 text-sm mt-8"
-          style={{ fontFamily: 'var(--font-satoshi)' }}>
+        <p className="text-center text-zinc-600 text-sm mt-8 font-satoshi">
           Pagamento à vista ou parcelado em até 3x no cartão. Processado com segurança via Cakto.
         </p>
       </div>
