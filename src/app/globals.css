@@ -1,19 +1,22 @@
 @import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=satoshi@300,400,500,700,900&f[]=melodrama@300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-clash: 'Clash Display', system-ui, sans-serif;
   --font-satoshi: 'Satoshi', system-ui, sans-serif;
   --font-melodrama: 'Melodrama', serif;
+  --font-tech: 'Orbitron', system-ui, sans-serif;
   --color-orange: #f84f1d;
   --color-orange-dim: #c93c0f;
   --color-bg: #0a0a0a;
   --color-surface: #111111;
   --color-border: #1f1f1f;
-  /* Font family utilities — use font-clash, font-satoshi, font-melodrama in className */
+  /* Font family utilities */
   --font-family-clash: var(--font-clash);
   --font-family-satoshi: var(--font-satoshi);
   --font-family-melodrama: var(--font-melodrama);
+  --font-family-tech: var(--font-tech);
 }
 
 @layer base {

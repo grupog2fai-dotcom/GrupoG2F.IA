@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description:
     "Pare de perder clientes para a concorrência. Contrate online: SEO Local (R$ 297), Agente de IA para WhatsApp e Landing Page + Tráfego. Resultado garantido ou reembolso.",
   keywords: "SEO local, agente de IA whatsapp, landing page tráfego pago, automação atendimento, GrupoG2F",
+  icons: {
+    icon: '/logo_icon.png',
+    apple: '/logo_icon.png',
+  },
   openGraph: {
     title: "Contrate Agora | SEO Local, Agente de IA e Landing Page — GrupoG2F.IA",
     description:
