@@ -20,8 +20,11 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-12 py-5 backdrop-blur-md bg-[#0a0a0a]/80 border-b border-white/5"
     >
       {/* Logo */}
-      <Link href="/" className="flex items-center gap-2">
-        <div className="relative w-10 h-10 -ml-1">
+      <Link href="/" className="flex items-center group">
+        <span className="text-white font-bold text-lg tracking-tight font-clash z-10 translate-y-[2px] -mr-2">
+          Grupo
+        </span>
+        <div className="relative w-12 h-12 group-hover:scale-105 transition-transform z-0">
           <Image 
             src="/logo_icon.png" 
             alt="G2F Icon" 
@@ -30,8 +33,8 @@ export default function Navbar() {
             priority
           />
         </div>
-        <span className="text-white font-semibold text-sm tracking-tight font-clash">
-          GrupoG2F<span className="text-[#f84f1d]">.IA</span>
+        <span className="text-[#C4881F] font-bold text-sm tracking-tight font-clash z-10 translate-y-[2px] -ml-1">
+          .IA
         </span>
       </Link>
 
