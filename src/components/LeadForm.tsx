@@ -92,9 +92,17 @@ export default function LeadForm() {
                   className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-zinc-300 text-base focus:outline-none focus:border-[#f84f1d] transition-colors appearance-none cursor-pointer font-satoshi"
                 >
                   <option value="" className="bg-zinc-900">Selecione um serviço</option>
-                  <option value="seo" className="bg-zinc-900">SEO Local — R$ 297/mês</option>
-                  <option value="ia" className="bg-zinc-900">Agente de IA WhatsApp — R$ 997</option>
-                  <option value="landing" className="bg-zinc-900">Landing Page + Tráfego — R$ 1.497</option>
+                  <option value="gmb-build" className="bg-zinc-900">Google Meu Negócio — Build R$397</option>
+                  <option value="gmb-advanced" className="bg-zinc-900">Google Meu Negócio — Advanced R$697</option>
+                  <option value="gmb-champion" className="bg-zinc-900">Google Meu Negócio — Champion R$997</option>
+                  <option value="robo-build" className="bg-zinc-900">Robô de Vendas — Build R$397</option>
+                  <option value="robo-advanced" className="bg-zinc-900">Robô de Vendas — Advanced R$697</option>
+                  <option value="robo-champion" className="bg-zinc-900">Robô de Vendas — Champion R$997</option>
+                  <option value="site-build" className="bg-zinc-900">Site Profissional — Build R$397</option>
+                  <option value="site-advanced" className="bg-zinc-900">Site Profissional — Advanced R$697</option>
+                  <option value="site-champion" className="bg-zinc-900">Site Profissional — Champion R$997</option>
+                  <option value="combo-build" className="bg-zinc-900">Combo Build (3 serviços) — R$997</option>
+                  <option value="combo-advanced" className="bg-zinc-900">Combo Advanced (3 serviços) — R$1.797</option>
                   <option value="nao-sei" className="bg-zinc-900">Não sei ainda — quero diagnóstico</option>
                 </select>
               </div>

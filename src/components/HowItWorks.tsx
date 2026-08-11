@@ -6,7 +6,7 @@ const steps = [
   {
     num: "01",
     title: "Você escolhe e contrata",
-    text: "Online, agora, pelo próprio site. Parcelamos em até 3x. Em menos de 5 minutos o processo está concluído.",
+    text: "Online, agora, pelo próprio site. Pix à vista ou cartão em até 4x sem juros. Em menos de 5 minutos o processo está concluído.",
   },
   {
     num: "02",
@@ -94,57 +94,21 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      {/* Testimonials — full-bleed inverted block */}
-      <section id="resultados" className="py-24 md:py-36 bg-white">
+      {/* Facts stripe */}
+      <section id="resultados" className="py-16 bg-[#111111] border-t border-b border-[#1a1a1a]">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-            className="mb-16"
-          >
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
-              <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
-                O que o mercado diz
-              </span>
-            </div>
-            <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-zinc-950 leading-[1.05] font-clash">
-              Design With Purpose.{" "}
-              <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400 }}>
-                Build With Impact.
-              </span>
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-                className="flex flex-col gap-6 p-8 border border-zinc-200 rounded-sm bg-white"
-              >
-                <div className="bg-[#f84f1d] text-white text-xs font-bold px-3 py-1.5 rounded-sm self-start uppercase tracking-widest font-clash">
-                  {t.result}
-                </div>
-                <blockquote className="text-xl text-zinc-800 leading-relaxed flex-1 font-clash" style={{ fontWeight: 400 }}>
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <div className="flex items-center gap-3 pt-4 border-t border-zinc-100">
-                  <div className="w-10 h-10 rounded-full bg-zinc-950 flex items-center justify-center text-white text-sm font-bold font-clash">
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <p className="text-zinc-950 font-bold text-sm font-clash">{t.name}</p>
-                    <p className="text-zinc-400 text-xs">{t.role}</p>
-                  </div>
-                </div>
-              </motion.div>
+          <div className="flex flex-wrap justify-center md:justify-between gap-8 md:gap-4">
+            {[
+              { label: "Entrega", value: "48–72h", sub: "por contrato" },
+              { label: "Garantia", value: "7 dias", sub: "de execução" },
+              { label: "A partir de", value: "R$397", sub: "pagamento único" },
+              { label: "Pagamento", value: "4x", sub: "sem juros no cartão" },
+            ].map((fact, i) => (
+              <div key={i} className="flex flex-col items-center text-center gap-1">
+                <span className="text-zinc-500 text-xs uppercase tracking-widest font-satoshi">{fact.label}</span>
+                <span className="text-3xl font-bold text-white font-clash">{fact.value}</span>
+                <span className="text-zinc-500 text-xs font-satoshi">{fact.sub}</span>
+              </div>
             ))}
           </div>
         </div>

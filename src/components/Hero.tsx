@@ -56,16 +56,14 @@ export default function Hero() {
               variants={item}
               className="text-[clamp(3rem,7vw,5.5rem)] leading-[0.93] font-semibold text-white font-clash"
             >
-              Seus clientes buscam<br />
-              por você.{" "}
+              Sua presença digital{" "}
               <span
-                className="font-melodrama-italic"
                 style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#a1a1aa' }}
               >
-                Seu concorrente
+                vira
               </span>
               <br />
-              <span style={{ color: '#f84f1d' }}>está aparecendo.</span>
+              <span style={{ color: '#f84f1d' }}>receita.</span>
             </motion.h1>
 
             {/* Sub */}
@@ -73,8 +71,8 @@ export default function Hero() {
               variants={item}
               className="text-lg md:text-xl text-zinc-400 leading-relaxed max-w-lg font-satoshi"
             >
-              A G2F instala o sistema completo para sua empresa{" "}
-              <strong className="text-white font-medium">aparecer primeiro</strong>,{" "}
+              Seus clientes buscam por você. A G2F instala o sistema completo pra sua empresa{" "}
+              <strong className="text-white font-medium">aparecer</strong>,{" "}
               <strong className="text-white font-medium">atender automaticamente</strong> e{" "}
               <strong className="text-white font-medium">converter mais</strong> — sem precisar contratar mais ninguém.
             </motion.p>
@@ -85,13 +83,13 @@ export default function Hero() {
                 href="#servicos"
                 className="group flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold px-8 py-4 transition-all duration-300 rounded-sm text-sm uppercase tracking-widest font-clash"
               >
-                <span>Escolher meu serviço</span>
+                <span>Escolher meu plano</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transition-transform group-hover:translate-x-1">
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5511962236635?text=Quero%20tirar%20meu%20neg%C3%B3cio%20do%20anonimato.%20Qual%20plano%20%C3%A9%20o%20certo%20pro%20meu%20caso%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 border border-zinc-800 hover:border-zinc-600 text-zinc-300 hover:text-white font-semibold px-8 py-4 transition-all duration-300 rounded-sm text-sm font-satoshi"
