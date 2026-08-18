@@ -56,14 +56,14 @@ export default function HowItWorks() {
             className="mb-16"
           >
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
               <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
                 Como funciona
               </span>
             </div>
             <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-white leading-[1.05] font-clash">
               Simples. Rápido.{" "}
-              <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#f84f1d' }}>
+              <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#c8a84b' }}>
                 Sem complicação.
               </span>
             </h2>
@@ -99,7 +99,7 @@ export default function HowItWorks() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex flex-wrap justify-center md:justify-between gap-8 md:gap-4">
             {[
-              { label: "Entrega", value: "48–72h", sub: "por contrato" },
+              { label: "Entrega", value: "48 a 72 horas", sub: "por contrato" },
               { label: "Garantia", value: "7 dias", sub: "de execução" },
               { label: "A partir de", value: "R$397", sub: "pagamento único" },
               { label: "Pagamento", value: "4x", sub: "sem juros no cartão" },

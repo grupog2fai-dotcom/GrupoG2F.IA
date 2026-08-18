@@ -15,7 +15,7 @@ export default function About() {
           viewport={{ once: true }}
           className="flex items-center gap-2 mb-16"
         >
-          <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+          <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
           <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
             Por que escolher a G2F
           </span>
@@ -40,11 +40,11 @@ export default function About() {
               que falta na sua empresa.
             </h2>
 
-            {/* Image — editorial */}
+            {/* Image, editorial */}
             <div className="relative w-full aspect-[4/3] rounded-sm overflow-hidden bg-zinc-900">
               <Image
                 src="/hero-portrait.jpg"
-                alt="Gabriel Alexandre — Fundador GrupoG2F.IA"
+                alt="Gabriel Alexandre, Fundador GrupoG2F.IA"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 42vw"
@@ -72,18 +72,18 @@ export default function About() {
             className="lg:col-span-7 lg:pl-20 flex flex-col gap-10 pt-4"
           >
             <p className="text-xl text-zinc-300 leading-relaxed font-satoshi">
-              A G2F nasceu da observação de que a maioria das PMEs não fracassa por falta de esforço, mas por operar{" "}
+              A G2F nasceu da observação de que a maioria das pequenas e médias empresas não fracassa por falta de esforço, mas por operar{" "}
               <strong className="text-white">sem processos, sem estratégia e sem tecnologia.</strong>
             </p>
 
             <p className="text-lg text-zinc-400 leading-relaxed font-satoshi">
-              Enquanto grandes empresas crescem usando IA e automação, milhares de empresários continuam presos a rotinas manuais e ferramentas desconectadas. Nós democratizamos esse acesso.
+              Enquanto grandes empresas crescem usando IA e automação, milhares de empresários continuam presos a rotinas manuais e ferramentas desconectadas. Nós levamos essa mesma tecnologia para o seu negócio por um valor acessível.
             </p>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-4 mt-4">
               {[
-                { num: "47+", label: "Empresas aceleradas" },
+                { num: "47+", label: "Empresas atendidas" },
                 { num: "7 dias", label: "Tempo médio p/ 1º resultado" },
                 { num: "BR, PY & LATAM", label: "Brasil, Paraguai e América Latina" },
                 { num: "R$35k+", label: "Economizados em salários/cliente" },
@@ -99,10 +99,10 @@ export default function About() {
               ))}
             </div>
 
-            {/* Button — secondary style */}
+            {/* Button, secondary style */}
             <a
               href="#diagnostico"
-              className="self-start flex items-center gap-3 border border-zinc-700 hover:border-[#f84f1d] text-zinc-300 hover:text-white font-semibold px-7 py-4 transition-all duration-300 rounded-sm text-sm font-satoshi"
+              className="self-start flex items-center gap-3 border border-zinc-700 hover:border-[#c8a84b] text-zinc-300 hover:text-white font-semibold px-7 py-4 transition-all duration-300 rounded-sm text-sm font-satoshi"
             >
               Agendar diagnóstico gratuito
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

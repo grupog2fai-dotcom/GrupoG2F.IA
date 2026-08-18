@@ -26,17 +26,17 @@ export default function Hero() {
       
       {/* Background ambient glow */}
       <div className="absolute top-0 right-0 w-[900px] h-[900px] opacity-20 pointer-events-none"
-        style={{ background: 'radial-gradient(circle at 70% 30%, #f84f1d 0%, transparent 60%)' }}
+        style={{ background: 'radial-gradient(circle at 70% 30%, #c8a84b 0%, transparent 60%)' }}
       />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] opacity-10 pointer-events-none"
-        style={{ background: 'radial-gradient(circle at 30% 70%, #f84f1d 0%, transparent 60%)' }}
+        style={{ background: 'radial-gradient(circle at 30% 70%, #c8a84b 0%, transparent 60%)' }}
       />
 
       {/* Main layout: text left, image right */}
       <div className="relative z-10 flex-1 flex items-center max-w-[1400px] mx-auto w-full px-6 lg:px-12 pt-8 pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-end w-full min-h-[calc(100vh-5rem)]">
           
-          {/* Left Column — Text */}
+          {/* Left Column, Text */}
           <motion.div
             variants={container}
             initial="hidden"
@@ -45,13 +45,13 @@ export default function Hero() {
           >
             {/* Tag */}
             <motion.div variants={item} className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
               <span className="text-xs font-semibold text-zinc-400 tracking-widest uppercase font-satoshi">
                 Tecnologia de ponta. Resultado em dias.
               </span>
             </motion.div>
 
-            {/* H1 — mixed typography */}
+            {/* H1, mixed typography */}
             <motion.h1
               variants={item}
               className="text-[clamp(3rem,7vw,5.5rem)] leading-[0.93] font-semibold text-white font-clash"
@@ -63,7 +63,7 @@ export default function Hero() {
                 vira
               </span>
               <br />
-              <span style={{ color: '#f84f1d' }}>receita.</span>
+              <span style={{ color: '#c8a84b' }}>receita.</span>
             </motion.h1>
 
             {/* Sub */}
@@ -74,14 +74,14 @@ export default function Hero() {
               Seus clientes buscam por você. A G2F instala o sistema completo pra sua empresa{" "}
               <strong className="text-white font-medium">aparecer</strong>,{" "}
               <strong className="text-white font-medium">atender automaticamente</strong> e{" "}
-              <strong className="text-white font-medium">converter mais</strong> — sem precisar contratar mais ninguém.
+              <strong className="text-white font-medium">converter mais</strong>, sem precisar contratar mais ninguém.
             </motion.p>
 
             {/* CTAs */}
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mt-2">
               <a
                 href="#servicos"
-                className="group flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold px-8 py-4 transition-all duration-300 rounded-sm text-sm uppercase tracking-widest font-clash"
+                className="group flex items-center justify-center gap-3 bg-[#c8a84b] hover:bg-[#7a621a] text-white font-bold px-8 py-4 transition-all duration-300 rounded-sm text-sm uppercase tracking-widest font-clash"
               >
                 <span>Escolher meu plano</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transition-transform group-hover:translate-x-1">
@@ -108,14 +108,14 @@ export default function Hero() {
                 <span className="text-2xl font-bold text-white font-clash">97%</span>
                 <span className="text-xs text-zinc-500 uppercase tracking-widest">Satisfação</span>
               </div>
-              <div className="flex flex-col gap-1 bg-[#f84f1d]/10 border border-[#f84f1d]/30 px-5 py-4 rounded-sm">
-                <span className="text-2xl font-bold text-[#f84f1d] font-clash">7d</span>
+              <div className="flex flex-col gap-1 bg-[#c8a84b]/10 border border-[#c8a84b]/30 px-5 py-4 rounded-sm">
+                <span className="text-2xl font-bold text-[#c8a84b] font-clash">7d</span>
                 <span className="text-xs text-zinc-500 uppercase tracking-widest">1º resultado</span>
               </div>
             </motion.div>
           </motion.div>
 
-          {/* Right Column — Hero Image (full bleed to bottom) */}
+          {/* Right Column, Hero Image (full bleed to bottom) */}
           <motion.div
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -125,7 +125,7 @@ export default function Hero() {
             <div className="relative w-full h-full">
               <Image
                 src="/hero-portrait.jpg"
-                alt="GrupoG2F.IA — Tecnologia de ponta para o seu negócio"
+                alt="GrupoG2F.IA, Tecnologia de ponta para o seu negócio"
                 fill
                 className="object-cover object-top"
                 priority

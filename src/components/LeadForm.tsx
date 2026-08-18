@@ -9,7 +9,7 @@ export default function LeadForm() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           
-          {/* Left — Copy */}
+          {/* Left, Copy */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export default function LeadForm() {
             className="flex flex-col gap-8"
           >
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
               <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
                 Iniciar aceleração
               </span>
@@ -26,7 +26,7 @@ export default function LeadForm() {
 
             <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white leading-[1.05] font-clash">
               A escolha é sua.{" "}
-              <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#f84f1d' }}>
+              <span style={{ fontFamily: 'var(--font-melodrama)', fontStyle: 'italic', fontWeight: 400, color: '#c8a84b' }}>
                 O tempo, não.
               </span>
             </h2>
@@ -37,14 +37,14 @@ export default function LeadForm() {
 
             <div className="flex flex-col gap-4">
               {[
-                "Sem compromisso — diagnóstico 100% gratuito",
+                "Sem compromisso, diagnóstico 100% gratuito",
                 "Resposta em até 15 minutos em horário comercial",
                 "Todos os dados são protegidos com NDA padrão",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-sm bg-[#f84f1d]/10 border border-[#f84f1d]/30 flex items-center justify-center flex-shrink-0">
+                  <div className="w-5 h-5 rounded-sm bg-[#c8a84b]/10 border border-[#c8a84b]/30 flex items-center justify-center flex-shrink-0">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path d="M2 5l2.5 2.5L8 3" stroke="#f84f1d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M2 5l2.5 2.5L8 3" stroke="#c8a84b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="text-zinc-400 text-sm font-satoshi">{item}</span>
@@ -53,7 +53,7 @@ export default function LeadForm() {
             </div>
           </motion.div>
 
-          {/* Right — Form */}
+          {/* Right, Form */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function LeadForm() {
                 <input
                   type="text"
                   placeholder="Nome completo"
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors font-satoshi"
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#c8a84b] transition-colors font-satoshi"
                 />
               </div>
 
@@ -80,7 +80,7 @@ export default function LeadForm() {
                 <input
                   type="tel"
                   placeholder="(00) 00000-0000"
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors font-satoshi"
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#c8a84b] transition-colors font-satoshi"
                 />
               </div>
 
@@ -89,21 +89,21 @@ export default function LeadForm() {
                   Serviço de interesse
                 </label>
                 <select
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-zinc-300 text-base focus:outline-none focus:border-[#f84f1d] transition-colors appearance-none cursor-pointer font-satoshi"
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-zinc-300 text-base focus:outline-none focus:border-[#c8a84b] transition-colors appearance-none cursor-pointer font-satoshi"
                 >
                   <option value="" className="bg-zinc-900">Selecione um serviço</option>
-                  <option value="gmb-build" className="bg-zinc-900">Google Meu Negócio — Build R$397</option>
-                  <option value="gmb-advanced" className="bg-zinc-900">Google Meu Negócio — Advanced R$697</option>
-                  <option value="gmb-champion" className="bg-zinc-900">Google Meu Negócio — Champion R$997</option>
-                  <option value="robo-build" className="bg-zinc-900">Robô de Vendas — Build R$397</option>
-                  <option value="robo-advanced" className="bg-zinc-900">Robô de Vendas — Advanced R$697</option>
-                  <option value="robo-champion" className="bg-zinc-900">Robô de Vendas — Champion R$997</option>
-                  <option value="site-build" className="bg-zinc-900">Site Profissional — Build R$397</option>
-                  <option value="site-advanced" className="bg-zinc-900">Site Profissional — Advanced R$697</option>
-                  <option value="site-champion" className="bg-zinc-900">Site Profissional — Champion R$997</option>
-                  <option value="combo-build" className="bg-zinc-900">Combo Build (3 serviços) — R$997</option>
-                  <option value="combo-advanced" className="bg-zinc-900">Combo Advanced (3 serviços) — R$1.797</option>
-                  <option value="nao-sei" className="bg-zinc-900">Não sei ainda — quero diagnóstico</option>
+                  <option value="gmb-build" className="bg-zinc-900">Google Meu Negócio, Build R$397</option>
+                  <option value="gmb-advanced" className="bg-zinc-900">Google Meu Negócio, Advanced R$697</option>
+                  <option value="gmb-champion" className="bg-zinc-900">Google Meu Negócio, Champion R$997</option>
+                  <option value="robo-build" className="bg-zinc-900">Robô de Vendas, Build R$397</option>
+                  <option value="robo-advanced" className="bg-zinc-900">Robô de Vendas, Advanced R$697</option>
+                  <option value="robo-champion" className="bg-zinc-900">Robô de Vendas, Champion R$997</option>
+                  <option value="site-build" className="bg-zinc-900">Site Profissional, Build R$397</option>
+                  <option value="site-advanced" className="bg-zinc-900">Site Profissional, Advanced R$697</option>
+                  <option value="site-champion" className="bg-zinc-900">Site Profissional, Champion R$997</option>
+                  <option value="combo-build" className="bg-zinc-900">Combo Build (3 serviços), R$997</option>
+                  <option value="combo-advanced" className="bg-zinc-900">Combo Advanced (3 serviços), R$1.797</option>
+                  <option value="nao-sei" className="bg-zinc-900">Não sei ainda, quero diagnóstico</option>
                 </select>
               </div>
 
@@ -114,13 +114,13 @@ export default function LeadForm() {
                 <textarea
                   rows={3}
                   placeholder="Descreva brevemente..."
-                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#f84f1d] transition-colors resize-none font-satoshi"
+                  className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm px-4 py-3.5 text-white text-base placeholder:text-zinc-700 focus:outline-none focus:border-[#c8a84b] transition-colors resize-none font-satoshi"
                 />
               </div>
 
               <button
                 type="button"
-                className="w-full flex items-center justify-center gap-3 bg-[#f84f1d] hover:bg-[#c93c0f] text-white font-bold py-[1.125rem] px-8 rounded-sm transition-all duration-300 text-sm uppercase tracking-widest mt-2 font-clash"
+                className="w-full flex items-center justify-center gap-3 bg-[#c8a84b] hover:bg-[#7a621a] text-white font-bold py-[1.125rem] px-8 rounded-sm transition-all duration-300 text-sm uppercase tracking-widest mt-2 font-clash"
               >
                 Solicitar diagnóstico estratégico
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

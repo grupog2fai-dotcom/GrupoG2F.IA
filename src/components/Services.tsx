@@ -49,7 +49,7 @@ const services = [
           "4 posts por mês",
           "Monitoramento de perguntas",
           "Relatório mensal",
-          "Recorrência opcional — cancele quando quiser",
+          "Cancelamento livre a qualquer momento",
         ],
         waText: "Quero%20o%20Champion%20do%20Google%20Meu%20Neg%C3%B3cio%20(R%24997%20ativa%C3%A7%C3%A3o%20%2B%201%C2%BA%20m%C3%AAs%2C%20depois%20R%24199%2Fm%C3%AAs%20cancel%C3%A1vel)",
       },
@@ -68,7 +68,7 @@ const services = [
         bullets: [
           "Fluxo de boas-vindas",
           "Resposta fora do horário",
-          "Resposta instantânea na 1ª interação",
+          "Resposta imediata na primeira mensagem",
           "Teste no número principal",
         ],
         waText: "Quero%20o%20Rob%C3%B4%20Build%20(R%24397%2C%20pagamento%20%C3%BAnico)",
@@ -80,7 +80,7 @@ const services = [
         highlight: true,
         bullets: [
           "Tudo do Build",
-          "Qualificação de lead (capta nome/zap)",
+          "Filtro de atendimento (coleta nome e WhatsApp do cliente)",
           "Encaminha pra fechar no momento certo",
           "Perguntas frequentes automatizadas",
         ],
@@ -94,7 +94,7 @@ const services = [
         bullets: [
           "Tudo do Advanced",
           "WhatsApp + Instagram no mesmo fluxo",
-          "Captura de lead pra planilha/CRM",
+          "Envio automático de contatos para sua planilha ou sistema",
           "Qualificação por etapa + relançamento",
           "Painel de conversas",
         ],
@@ -127,9 +127,9 @@ const services = [
         highlight: true,
         bullets: [
           "Tudo do Build",
-          "Copy de conversão (texto que vira clique)",
+          "Textos persuasivos focados em vendas",
           "Integração com WhatsApp + formulário",
-          "Pixel (Meta) pra medir conversas",
+          "Integração de rastreamento no Facebook e Instagram",
         ],
         waText: "Quero%20o%20Site%20Advanced%20(R%24697%2C%20pagamento%20%C3%BAnico)",
       },
@@ -141,9 +141,9 @@ const services = [
         bullets: [
           "Tudo do Advanced",
           "Site multi-página (início + serviços + contato)",
-          "Captura de lead automática",
-          "Pixel + evento de conversão",
-          "Base pronta pra tráfego pago depois",
+          "Captação automática de clientes",
+          "Código de rastreamento de anúncios instalado",
+          "Estrutura pronta para anúncios no Google e Meta",
         ],
         waText: "Quero%20o%20Site%20Champion%20(R%24997%2C%20pagamento%20%C3%BAnico)",
       },
@@ -182,7 +182,7 @@ export default function Services() {
           className="mb-20"
         >
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+            <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
             <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
               Soluções
             </span>
@@ -195,15 +195,15 @@ export default function Services() {
               </span>
             </h2>
             <p className="text-zinc-400 max-w-sm leading-relaxed text-base font-satoshi">
-              Três serviços, três níveis cada. Você paga pelo que precisa agora — e evolui quando quiser.
+              Três serviços, três níveis cada. Você paga pelo que precisa agora e evolui quando quiser.
             </p>
           </div>
 
           {/* Proof bar */}
           <div className="flex flex-wrap gap-6 mt-10 pt-8 border-t border-[#1a1a1a]">
-            {["Entrega 48–72h por contrato", "Garantia de execução: 7 dias", "A partir de R$397"].map((item, i) => (
+            {["Entrega em 48 a 72 horas por contrato", "Garantia de execução: 7 dias", "A partir de R$397"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
                 <span className="text-zinc-400 text-sm font-satoshi">{item}</span>
               </div>
             ))}
@@ -222,7 +222,7 @@ export default function Services() {
             >
               {/* Service header */}
               <div className="mb-8">
-                <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-sm bg-[#f84f1d]/15 text-[#f84f1d] font-satoshi">
+                <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-sm bg-[#c8a84b]/15 text-[#c8a84b] font-satoshi">
                   {service.tag}
                 </span>
                 <p className="text-zinc-300 text-lg mt-3 font-satoshi">{service.headline}</p>
@@ -239,20 +239,20 @@ export default function Services() {
                     transition={{ duration: 0.6, delay: pi * 0.1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                     className={`relative flex flex-col p-8 rounded-sm border transition-all duration-300 ${
                       plan.highlight
-                        ? "bg-[#111111] border-[#f84f1d]/40 shadow-[0_0_60px_rgba(248,79,29,0.12)]"
+                        ? "bg-[#111111] border-[#c8a84b]/40 shadow-[0_0_60px_rgba(248,79,29,0.12)]"
                         : "bg-[#0f0f0f] border-[#1f1f1f] hover:border-zinc-700"
                     }`}
                   >
                     {plan.highlight && (
                       <div className="absolute -top-3 left-8">
-                        <span className="bg-[#f84f1d] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-sm font-clash">
+                        <span className="bg-[#c8a84b] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-sm font-clash">
                           Mais Procurado
                         </span>
                       </div>
                     )}
 
                     {/* Plan name */}
-                    <p className={`text-xs font-bold uppercase tracking-widest mb-6 font-satoshi ${plan.highlight ? "text-[#f84f1d]" : "text-zinc-500"}`}>
+                    <p className={`text-xs font-bold uppercase tracking-widest mb-6 font-satoshi ${plan.highlight ? "text-[#c8a84b]" : "text-zinc-500"}`}>
                       {plan.name}
                     </p>
 
@@ -266,7 +266,7 @@ export default function Services() {
                     <div className="flex flex-col gap-3 mb-8 flex-1">
                       {plan.bullets.map((bullet, bi) => (
                         <div key={bi} className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d] mt-1.5 flex-shrink-0" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b] mt-1.5 flex-shrink-0" />
                           <span className="text-sm text-zinc-300 font-satoshi">{bullet}</span>
                         </div>
                       ))}
@@ -279,7 +279,7 @@ export default function Services() {
                       rel="noopener noreferrer"
                       className={`w-full text-center font-bold py-4 px-6 text-sm rounded-sm transition-all duration-300 uppercase tracking-widest font-clash ${
                         plan.highlight
-                          ? "bg-[#f84f1d] hover:bg-[#c93c0f] text-white"
+                          ? "bg-[#c8a84b] hover:bg-[#7a621a] text-white"
                           : "bg-white hover:bg-zinc-200 text-zinc-950"
                       }`}
                     >
@@ -301,13 +301,13 @@ export default function Services() {
           className="mt-24 pt-16 border-t border-[#1a1a1a]"
         >
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+            <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
             <span className="text-xs font-semibold text-zinc-500 tracking-widest uppercase font-satoshi">
               Combo dos 3
             </span>
           </div>
           <h3 className="text-2xl md:text-3xl font-semibold text-white font-clash mb-2">
-            Aparece, responde e vende — com desconto.
+            Aparece, responde e vende com desconto.
           </h3>
           <p className="text-zinc-400 font-satoshi mb-10">
             Os 3 serviços juntos por um preço menor. Solução completa de presença digital.
@@ -325,7 +325,7 @@ export default function Services() {
                     De <span className="line-through">{combo.original}</span> por{" "}
                     <span className="text-white font-bold">{combo.price}</span>
                   </p>
-                  <p className="text-[#f84f1d] text-xs mt-1 font-satoshi">✓ Economia de {combo.economy}</p>
+                  <p className="text-[#c8a84b] text-xs mt-1 font-satoshi">✓ Economia de {combo.economy}</p>
                 </div>
                 <a
                   href={`https://wa.me/${WA}?text=${combo.waText}`}
@@ -348,12 +348,12 @@ export default function Services() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
           className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          <div className="flex flex-col gap-3 p-8 bg-[#f84f1d]/5 border border-[#f84f1d]/20 rounded-sm">
+          <div className="flex flex-col gap-3 p-8 bg-[#c8a84b]/5 border border-[#c8a84b]/20 rounded-sm">
             <div className="flex items-center gap-2">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M8 1L10.5 5.5L15.5 6.5L11.75 10.25L12.5 15.5L8 13L3.5 15.5L4.25 10.25L0.5 6.5L5.5 5.5L8 1Z" fill="#f84f1d"/>
+                <path d="M8 1L10.5 5.5L15.5 6.5L11.75 10.25L12.5 15.5L8 13L3.5 15.5L4.25 10.25L0.5 6.5L5.5 5.5L8 1Z" fill="#c8a84b"/>
               </svg>
-              <span className="text-[#f84f1d] text-xs font-bold uppercase tracking-widest font-satoshi">Garantia de 7 dias</span>
+              <span className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest font-satoshi">Garantia de 7 dias</span>
             </div>
             <p className="text-zinc-300 text-sm font-satoshi leading-relaxed">
               Garantia objetiva com prazo definido. Se em 7 dias o que está no plano não for entregue, devolvemos 100%. Você só paga se a gente entregar o combinado. Sem letra miúda, sem risco pro seu lado.
@@ -368,7 +368,7 @@ export default function Services() {
               <span className="text-zinc-400 text-xs font-bold uppercase tracking-widest font-satoshi">Pagamento</span>
             </div>
             <p className="text-zinc-400 text-sm font-satoshi leading-relaxed">
-              Pix à vista ou cartão em até <strong className="text-white">4x sem juros</strong>. Cartão processado com segurança via Cakto; Pix direto com comprovante enviado no WhatsApp. <strong className="text-white">Contrato antes do pagamento</strong> — você sabe exatamente o que vai ser entregue.
+              Pix à vista ou cartão em até <strong className="text-white">4x sem juros</strong>. Cartão processado com segurança via Cakto; Pix direto com comprovante enviado no WhatsApp. <strong className="text-white">Contrato antes do pagamento</strong>, você sabe exatamente o que vai ser entregue.
             </p>
           </div>
         </motion.div>

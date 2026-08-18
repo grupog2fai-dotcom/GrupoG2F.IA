@@ -54,7 +54,7 @@ export default function Navbar() {
       {/* CTA */}
       <a
         href="#servicos"
-        className="flex items-center gap-2 bg-[#f84f1d] hover:bg-[#c93c0f] text-white text-sm font-semibold px-5 py-2.5 transition-colors rounded-sm font-clash"
+        className="flex items-center gap-2 bg-[#c8a84b] hover:bg-[#7a621a] text-white text-sm font-semibold px-5 py-2.5 transition-colors rounded-sm font-clash"
       >
         Contratar agora
       </a>

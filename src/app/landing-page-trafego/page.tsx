@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function LandingPageTrafegoPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] selection:bg-[#f84f1d]/30 selection:text-white flex flex-col">
+    <div className="min-h-screen bg-[#0a0a0a] selection:bg-[#c8a84b]/30 selection:text-white flex flex-col">
       <Navbar />
 
       <main className="flex-1 pt-24">
@@ -15,7 +15,7 @@ export default function LandingPageTrafegoPage() {
         <section className="relative py-20 lg:py-28 overflow-hidden border-b border-[#1f1f1f]">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-[#0a0a0a] bg-opacity-90 z-10" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#f84f1d] opacity-[0.03] blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#c8a84b] opacity-[0.03] blur-[120px] rounded-full pointer-events-none" />
           </div>
 
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-20">
@@ -26,15 +26,15 @@ export default function LandingPageTrafegoPage() {
               className="max-w-3xl"
             >
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
-                <span className="text-xs font-semibold text-[#f84f1d] tracking-widest uppercase font-satoshi">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
+                <span className="text-xs font-semibold text-[#c8a84b] tracking-widest uppercase font-satoshi">
                   Atração e Conversão de Leads
                 </span>
               </div>
 
               <h1 className="text-[clamp(3.5rem,7vw,5.5rem)] font-bold text-white leading-[0.95] tracking-tight mb-8 font-clash">
                 Sua agenda lotada. <br />
-                <span className="font-melodrama font-serif-italic text-[#f84f1d]">
+                <span className="font-melodrama font-serif-italic text-[#c8a84b]">
                   Sem depender de indicações.
                 </span>
               </h1>
@@ -57,7 +57,7 @@ export default function LandingPageTrafegoPage() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               >
                 <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-6 font-clash">
-                  Transparência total sobre o <span className="text-[#f84f1d]">seu crescimento.</span>
+                  Transparência total sobre o <span className="text-[#c8a84b]">seu crescimento.</span>
                 </h2>
                 <p className="text-zinc-400 leading-relaxed mb-6 font-satoshi">
                   Muitas empresas se frustram ao investir em anúncios por não conseguirem medir o retorno exato das campanhas. O WhatsApp recebe mensagens, mas no final do mês a conta do marketing não fecha.
@@ -67,7 +67,7 @@ export default function LandingPageTrafegoPage() {
                 <ul className="flex flex-col gap-3">
                   {["Desenvolvimento de Landing Pages otimizadas para conversão", "Gestão profissional de tráfego no Google Ads, Instagram e Facebook", "Painéis integrados para rastreamento claro do seu retorno financeiro"].map((bullet, i) => (
                     <li key={i} className="flex items-center gap-3 text-sm text-zinc-300 font-satoshi">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#f84f1d]" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#c8a84b]" />
                       {bullet}
                     </li>
                   ))}
@@ -117,8 +117,8 @@ export default function LandingPageTrafegoPage() {
                     { step: "05", title: "Lançamento Oficial", desc: "Realizamos uma reunião de alinhamento para apresentar a página pronta, o painel de métricas e colocar as campanhas no ar." }
                   ].map((item, idx) => (
                     <div key={idx} className="relative pl-8">
-                      <div className="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#111111] border border-[#f84f1d] flex items-center justify-center">
-                        <span className="text-[#f84f1d] text-[10px] font-bold">{item.step}</span>
+                      <div className="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#111111] border border-[#c8a84b] flex items-center justify-center">
+                        <span className="text-[#c8a84b] text-[10px] font-bold">{item.step}</span>
                       </div>
                       <h3 className="text-white font-medium mb-1 font-clash text-lg">{item.title}</h3>
                       <p className="text-sm text-zinc-500 font-satoshi leading-relaxed">{item.desc}</p>
@@ -132,10 +132,10 @@ export default function LandingPageTrafegoPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="bg-[#111111] border border-[#f84f1d]/20 rounded-sm p-10 lg:sticky lg:top-32 shadow-[0_0_80px_rgba(248,79,29,0.07)]"
+                className="bg-[#111111] border border-[#c8a84b]/20 rounded-sm p-10 lg:sticky lg:top-32 shadow-[0_0_80px_rgba(248,79,29,0.07)]"
               >
                 <div className="mb-8">
-                  <span className="text-[#f84f1d] text-sm font-bold tracking-widest uppercase mb-2 block font-satoshi">Setup de Ativação</span>
+                  <span className="text-[#c8a84b] text-sm font-bold tracking-widest uppercase mb-2 block font-satoshi">Setup de Ativação</span>
                   <h3 className="text-3xl text-white font-semibold font-clash">R$ 1.497<span className="text-zinc-500 text-lg">/único</span></h3>
                   <p className="text-zinc-400 mt-4 text-sm font-satoshi">
                     Garantia de Qualidade: Se a Landing Page não for entregue no prazo estipulado e com as métricas de acompanhamento perfeitamente rastreadas, estornamos o valor do setup.
@@ -155,7 +155,7 @@ export default function LandingPageTrafegoPage() {
 
                 <a
                   href="#checkout-cakto"
-                  className="w-full block text-center font-bold py-5 px-6 bg-[#f84f1d] hover:bg-[#c93c0f] text-white rounded-sm transition-all tracking-widest uppercase text-sm mb-4 font-clash"
+                  className="w-full block text-center font-bold py-5 px-6 bg-[#c8a84b] hover:bg-[#7a621a] text-white rounded-sm transition-all tracking-widest uppercase text-sm mb-4 font-clash"
                 >
                   Contratar Agora
                 </a>
